@@ -28,6 +28,9 @@ void selection_sort(int *array, size_t size)
 	unsigned int j = 0;
 	unsigned int index = 0;
 
+	if (array == NULL || size < 2)
+		return;
+
 	for (i = 0; i < size - 1; i++)
 	{
 		index = i;
