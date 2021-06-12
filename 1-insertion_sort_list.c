@@ -2,8 +2,9 @@
 
 /**
  * swap_node - Swaps for sort
- * @var1: Variable 1
- * @var2: Variable 2
+ * @head: Head of linked list
+ * @node1: Node 1
+ * @node2: Node 2
  * Return: Void
  */
 
