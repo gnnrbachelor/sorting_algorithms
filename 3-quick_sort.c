@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * quick
+ * quick_sort
  *
  *
  *
