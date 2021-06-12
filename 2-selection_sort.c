@@ -7,7 +7,7 @@
  * Return: Void
  */
 
-void swap(int *var1, int *var2)
+void swap_sel(int *var1, int *var2)
 {
 	int temp = *var1;
 
@@ -35,7 +35,7 @@ void selection_sort(int *array, size_t size)
 			if (array[j] < array[index])
 				index = j;
 
-		swap(&array[index], &array[i]);
+		swap_sel(&array[index], &array[i]);
 		print_array(array, size);
 	}
 }
