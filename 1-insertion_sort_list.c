@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * insertion_sort - Sorts doubly linked list
+ * insertion_sort_list - Sorts doubly linked list
  * @list: head of list
  * Return: Void
  *
