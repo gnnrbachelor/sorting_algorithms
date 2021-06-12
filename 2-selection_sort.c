@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * swap - Swaps for sort
+ * swap_sel - Swaps for sort
  * @var1: Variable 1
  * @var2: Variable 2
  * Return: Void
