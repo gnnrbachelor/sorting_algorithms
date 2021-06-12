@@ -37,8 +37,10 @@ void selection_sort(int *array, size_t size)
 		for (j = i + 1; j < size; j++)
 			if (array[j] < array[index])
 				index = j;
-
-		swap_sel(&array[index], &array[i]);
-		print_array(array, size);
+		if (i != index)
+		{
+			swap_sel(&array[index], &array[i]);
+			print_array(array, size);
+		}
 	}
 }
