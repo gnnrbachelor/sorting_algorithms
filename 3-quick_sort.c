@@ -43,7 +43,7 @@ size_t partition(int *array, ssize_t low, ssize_t high, size_t size)
 		}
 	}
 
-	swap(&array[i + 1], &array[high]);
+	swap_q(&array[i + 1], &array[high]);
 	print_array(array, size);
 
 	return (i + 1);
