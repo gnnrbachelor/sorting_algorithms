@@ -37,9 +37,12 @@ size_t partition(int *array, ssize_t low, ssize_t high, size_t size)
 	{
 		if (array[j] <= pivot)
 		{
-			i++;
-			swap_q(&array[i], &array[j]);
-			print_array(array, size);
+			if (i != j)
+			{
+				i++;
+				swap_q(&array[i], &array[j]);
+				print_array(array, size);
+			}
 		}
 	}
 
