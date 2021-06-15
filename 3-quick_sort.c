@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * swap - Swaps for sort
+ * swap_q - Swaps for sort
  * @var1: Variable 1
  * @var2: Variable 2
  * Return: Void
@@ -21,7 +21,7 @@ void swap_q(int *var1, int *var2)
  * @low: Low
  * @high: High
  * @size: Size
- * Return: Unsigned int
+ * Return: size_t
  *
  */
 
@@ -37,12 +37,9 @@ size_t partition(int *array, ssize_t low, ssize_t high, size_t size)
 	{
 		if (array[j] <= pivot)
 		{
-			if (i != j)
-			{
-				i++;
-				swap_q(&array[i], &array[j]);
-				print_array(array, size);
-			}
+			i++;
+			swap_q(&array[i], &array[j]);
+			print_array(array, size);
 		}
 	}
 
