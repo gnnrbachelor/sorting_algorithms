@@ -19,8 +19,9 @@ void swap_h(int *var1, int *var2)
  * heapify - Creates Heap
  * @array: Array
  * @size: Size
- *
- *
+ * @level: Level of tree
+ * @i: root
+ * Return: Void
  */
 
 void heapify(int *array, size_t size, size_t level, size_t i)
