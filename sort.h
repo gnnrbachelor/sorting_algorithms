@@ -37,6 +37,10 @@ void counting_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void swap_it(listint_t **list, listint_t *node);
 void merge_sort(int *array, size_t size);
+void swap_h(int *var1, int *var2);
+void heapify(int *array, size_t size, size_t level, size_t i);
+void heap_sort(int *array, size_t size);
+
 
 
 #endif
